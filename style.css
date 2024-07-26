@@ -70,7 +70,7 @@ body {
 .card h3 {
     font-size: 12px;
     font-weight: 600;
-    color: (234, 12%, 34%)
+    color: hsl(234, 12%, 34%)
 }
 
 .card p {
@@ -123,4 +123,67 @@ body {
     position: absolute;
     right: 0;
     bottom: 0;
+}
+
+@media(max-width: 720px){
+    body {
+        height: auto;
+        justify-content: initial;
+        position: initial;
+    }
+    
+    .top {
+        width: 255px;
+        margin-top: 50px;
+    }
+    
+    .top h1 {
+        font-size: 20px;
+    }
+    
+    .top span {
+        font-size: 20px;
+    }
+    
+    .top p {
+        font-size: 12px;
+        margin-top: 13px;
+    }
+    
+    .cards {
+        width: 255px;
+        margin-top: 60px;
+        flex-direction: column;
+    }
+    
+    .cards-left {
+        align-items: initial;
+    }
+    
+    .card {
+        width: 255px;
+    }
+    
+    .card h3 {
+        font-size: 14px;
+    }
+    
+    .card p {
+        font-size: 10px;
+        margin-top: 5px;
+    }
+
+    .cards-center .card:nth-child(2){
+        margin-bottom: 0px;
+    }
+    
+    .cards-right{
+        align-items: initial;
+    }
+    
+    .attribution {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+    }
 }
